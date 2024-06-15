@@ -1,0 +1,32 @@
+{
+  "realtimeposition": {
+    "result": {
+      "code": "INFO-000",
+      "developermessage": {},
+      "link": {},
+      "message": "정상 처리되었습니다.",
+      "status": 200,
+      "total": 83
+    },
+    "row": [
+      {
+        "rownum": 1,
+        "selectedcount": 5,
+        "totalcount": 83,
+        "subwayid": 1001,
+        "subwaynm": "1호선",
+        "statnid": 1001000127,
+        "statnnm": "동묘앞",
+        "trainno": 42,
+        "lastrecptndt": 20240611,
+        "recptndt": "2024-06-11 10:21:59",
+        "updnline": 0,
+        "statntid": 1001000100,
+        "statntnm": "소요산",
+        "trainsttus": 1,
+        "directat": 0,
+        "lstcarat": 0
+      }
+    ]
+  }
+}

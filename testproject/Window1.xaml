@@ -1,0 +1,20 @@
+﻿<Window x:Class="testproject.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:testproject"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Button Content="close" Margin="652,150,10,162" Click="Button_Click"/>
+        <Button Content="search" HorizontalAlignment="Left" Margin="592,104,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
+        <ScrollViewer x:Name="scroll_view" MaxHeight="350" 
+              HorizontalScrollBarVisibility="Disabled"
+              VerticalScrollBarVisibility="Auto" Margin="278,51,322,-51">
+            <TextBlock x:Name="search_view" Height="Auto" Width="200" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" VerticalAlignment="Top"  />
+        </ScrollViewer>
+        <TextBox  x:Name="aa" TextWrapping="Wrap" Text="" Margin="280,10,306,389" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>
