@@ -22,7 +22,7 @@ namespace testproject
     /// </summary>
     public partial class signup : Page
     {
-        public static TcpClient client = new TcpClient("10.10.21.111", 5558);
+        public static TcpClient client = new TcpClient("10.10.21.111", 5562);
         public signup()
         {
             InitializeComponent();
@@ -33,7 +33,7 @@ namespace testproject
         {
             try
             {
-                List<string> aaaa = new List<string>();
+                //List<string> aaaa = new List<string>();
                 byte[] data;
 
                 //연결객체

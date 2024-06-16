@@ -7,11 +7,20 @@
       mc:Ignorable="d" 
       d:DesignHeight="800" d:DesignWidth="500"
       Title="chatting">
-<!--//상담사용--> 
+    <!--//상담사용-->
     <Grid Background="White">
-        <TextBox x:Name="txtbox_chat1" TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Center" Height="482" Margin="0,10,0,0" VerticalAlignment="Top" Width="406" Background="#FFCCFFFE"/>
-        <TextBox x:Name="txtbox_send1" HorizontalAlignment="Center" IsReadOnly="True" Height="28" Margin="0,508,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" BorderBrush="#FF234ED2" KeyUp="txtbox_send1_KeyUp"/>
-        
-
+        <TextBox x:Name="txtbox_chat1" TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Center" Height="482" Margin="0,10,0,0" VerticalAlignment="Top" Width="406" Background="White"/>
+        <TextBox x:Name="txtbox_send1" HorizontalAlignment="Center" IsReadOnly="True" Height="28" Margin="0,508,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="410" BorderBrush="Black" KeyUp="txtbox_send1_KeyUp"/>
+        <ListView x:Name="liv_info" HorizontalAlignment="Center" Height="71" Margin="0,592,0,0" VerticalAlignment="Top" Width="258" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="고객번호" Width="58" DisplayMemberBinding="{Binding CCNUM}"/>
+                    <GridViewColumn Header="성함" Width="78" DisplayMemberBinding="{Binding NAME}"/>
+                    <GridViewColumn Header="아이디" Width="88" DisplayMemberBinding="{Binding ID}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="keyword" TextWrapping="Wrap" Text="상담키워드 입력" Margin="101,692,316,64"/>
+        <Button x:Name="keyword_buton" Content="상담키워드 " Margin="250,689,146,64" Click="keyword_buton_Click"/>
     </Grid>
 </Page>

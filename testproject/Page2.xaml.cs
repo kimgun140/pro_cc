@@ -33,9 +33,9 @@ namespace testproject
             {
                 List<string> aaaa = new List<string>();
                 byte[] data;
-
-                TcpClient client = new TcpClient("10.10.21.111", 5558); //연결객체
-                NetworkStream stream = client.GetStream(); //데이터 전송에 사용된 스트림
+                //signup.client
+                //TcpClient client = new TcpClient("10.10.21.111", 5558); //연결객체
+                NetworkStream stream = signup.client.GetStream(); //데이터 전송에 사용된 스트림
                 //string message = "Hello from test";
 
                 string send_msg;
@@ -101,8 +101,8 @@ namespace testproject
                 //responses = Encoding.UTF8.GetString(data, 0, bytes);
                 //txtbox_chat1.Text += ("Received: " + responses + "\n");
 
-                stream.Close();
-                client.Close();
+                //stream.Close();
+                //signup.client.Close();
 
             }
             catch (Exception e)
